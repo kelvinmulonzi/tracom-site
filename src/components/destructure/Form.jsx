@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Form = () => {
   return (
     <StyledWrapper>
+      <div className="form-container">
       <div className="container">
         <div className="heading">Sign In</div>
         <form action="" className="form">
@@ -67,6 +68,7 @@ const Form = () => {
           <a href="#">Learn user licence agreement</a>
         </span>
       </div>
+    </div>
     </StyledWrapper>
   );
 };
@@ -86,6 +88,10 @@ const StyledWrapper = styled.div`
     box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
     margin: 20px;
   }
+    .form-container {
+    display: flex;
+    justify-content: center;
+    
 
   .heading {
     text-align: center;

@@ -8,7 +8,7 @@ import Footer from "./components/destructure/Footer.jsx";
 import Login from "./components/destructure/Form.jsx";
 import Signup from "./components/destructure/Signup.jsx";
 import Layout from "./components/destructure/Layout.jsx";
-
+import About from "./components/destructure/About.jsx";
 function App() {
   return (
     <div>
@@ -19,8 +19,9 @@ function App() {
             <Route path="/footer" element={<Footer />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/about" element={<About />} />
           </Route>
-          .
+          
         </Routes>
       </Router>
     </div>

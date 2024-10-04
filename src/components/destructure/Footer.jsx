@@ -22,12 +22,7 @@ const Footer = () => {
           <p>Email: tracom@gmail.com</p>
           <p>Phone: +254712345678</p>
           <h2>Follow Us</h2>
-          <ul>
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
+         
         </div>
       </div>
       <div className="footer-bottom">
