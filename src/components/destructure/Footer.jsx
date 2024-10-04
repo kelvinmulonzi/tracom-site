@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="footer-section links">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li key="home"><a href="#">Home</a></li>
+            <li key="services"><a href="#">Services</a></li>
+            <li key="about"><a href="#">About</a></li>
+            <li key="contact"><a href="#">Contact</a></li>
           </ul>
         </div>
         <div className="footer-section contact">
@@ -22,7 +22,13 @@ const Footer = () => {
           <p>Email: tracom@gmail.com</p>
           <p>Phone: +254712345678</p>
           <h2>Follow Us</h2>
-         
+          
+          <ul>
+            <li key="facebook"><a href="https://www.facebook.com/">Facebook</a></li>
+            <li key="twitter"><a href="https://twitter.com">Twitter</a></li>
+            <li key="instagram"><a href="#">Instagram</a></li>
+            <li key="linkedin"><a href="#">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
       <div className="footer-bottom">
