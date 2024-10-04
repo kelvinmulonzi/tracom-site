@@ -1,5 +1,5 @@
 
-import logo from '../../Assets/graduates.png';
+import logo from '/graduates.png';
 import grad from '../../Assets/graduate1.jpg';
 
 const Body = () => (
