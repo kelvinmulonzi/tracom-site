@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body layout */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main Header */
+.main-header {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Main Navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-logo {
+  height: 50px;
+}
+
+#main-nav-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+#main-nav-ul li {
+  margin: 0 10px;
+}
+
+#main-nav-ul a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.search {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.btn, .btn2 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn2 {
+  background-color: #28a745;
+}
+
+.main-img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+
+}
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(229, 235, 235);
+  margin: 0 auto;
+  margin-top: 60px;
+  height: 50vh;
+  width: 50vh;
+  flex-direction: row;
+}
+.hero-section .ourform{
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+}
+.survey{
+  background-color: rgb(33, 221, 9);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 20%;
+}
+.graduates {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.graduates h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.graduates-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.graduates-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.graduates-card:hover {
+  transform: translateY(-10px);
+}
+
+.graduates-card h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.graduates-card p {
+  color: #777;
+}
+
+.graduate-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+}
