@@ -14,7 +14,7 @@ const Body = () => (
           <p>Software Developer</p>
         </div>
         <div className="graduates-card">
-        <img src={grad} alt="graduate" className="graduate-img" />
+        <img src={grad} alt="graduatess" className="graduate-img" />
           <h2>Jane Doe</h2>
           <p>Quality Assurance</p>
         </div>
