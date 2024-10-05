@@ -1,6 +1,6 @@
 
-import logo from '/graduates.png';
-import grad from '../../Assets/graduate1.jpg';
+import logo from '../../assets/graduates.png';
+import grad from '../../assets/graduate1.jpg';
 
 const Body = () => (
   <div>
