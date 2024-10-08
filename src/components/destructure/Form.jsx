@@ -76,12 +76,12 @@ const Form = () => {
 const StyledWrapper = styled.div`
   .container {
     max-width: 350px;
-    background: #f8f9fd;
-    background: linear-gradient(
-      0deg,
-      rgb(255, 255, 255) 0%,
-      rgb(244, 247, 251) 100%
-    );
+    background: #C0C78C;
+    // background: linear-gradient(
+    //   0deg,
+    //   rgb(255, 255, 255) 0%,
+    //   rgb(244, 247, 251) 100%
+    // );
     border-radius: 40px;
     padding: 25px 35px;
     border: 5px solid rgb(255, 255, 255);
@@ -91,6 +91,7 @@ const StyledWrapper = styled.div`
     .form-container {
     display: flex;
     justify-content: center;
+    background: #FEFAE0;
     
 
   .heading {

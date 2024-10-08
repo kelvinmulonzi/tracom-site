@@ -9,7 +9,7 @@ const Nav = () => {
       <nav className="main-nav">
         <img src={tracom} alt="tracom-logo" className="main-logo" />
         <ul id="main-nav-ul">
-          <li><Link to="/body">Home</Link></li>
+          <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/services">Services</Link></li>
           <li><Link to="/team">Team</Link></li>

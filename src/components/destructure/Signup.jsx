@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -98,7 +99,7 @@ const Form = () => {
         </label>
         <button className="submit">Submit</button>
         <p className="signin">
-          Already have an acount ? <a href="#">Signin</a>{" "}
+          Already have an acount ? <Link to="/login">Sign in</Link>
         </p>
       </form>
             </div>
