@@ -1,4 +1,5 @@
-
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -6,7 +7,10 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section about">
           <h2>About Us</h2>
-          <p>This is Tracom Academy.</p>
+          <p>
+            Tracom Academy is dedicated to providing quality education and
+            opportunities for growth in the tech industry.
+          </p>
         </div>
         <div className="footer-section links">
           <h2>Quick Links</h2>
@@ -22,17 +26,24 @@ const Footer = () => {
           <p>Email: tracom@gmail.com</p>
           <p>Phone: +254712345678</p>
           <h2>Follow Us</h2>
-          
-          <ul>
-            <li key="facebook"><a href="https://www.facebook.com/">Facebook</a></li>
-            <li key="twitter"><a href="https://twitter.com">Twitter</a></li>
-            <li key="instagram"><a href="#">Instagram</a></li>
-            <li key="linkedin"><a href="#">LinkedIn</a></li>
-          </ul>
+          <div className="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <FaFacebook />
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+            <a href="https://www.instagram.com" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 All rights reserved.</p>
+        <p>&copy; 2024 Tracom Academy. All rights reserved.</p>
       </div>
     </footer>
   );

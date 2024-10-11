@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Form = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -21,88 +21,96 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("formData", JSON.stringify(formData));
-    
+
+    // Check if passwords match
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+    // Store form data in localStorage under "user" key
+    localStorage.setItem("user", JSON.stringify(formData));
+    alert("Signup successful!");
   };
 
   return (
     <StyledWrapper>
       <div className="wraper">
-
-      <form className="form" onSubmit={handleSubmit}>
-        <p className="title">Register </p>
-        <p className="message">Signup now and get full access to our app. </p>
-        <div className="flex">
-          <label>
-            <input
-              className="input"
-              type="text"
-              name="firstname"
-              value={formData.firstname}
-              onChange={handleChange}
-              placeholder=""
-              required
-            />
-            <span>Firstname</span>
-          </label>
-
-          <label>
-            <input
-              className="input"
-              type="text"
-              name="lastname"
-              value={formData.lastname}
-              onChange={handleChange}
-              placeholder=""
-              required
+        <form className="form" onSubmit={handleSubmit}>
+          <p className="title">Register</p>
+          <p className="message">Signup now and get full access to our app.</p>
+          <div className="flex">
+            <label>
+              <input
+                className="input"
+                type="text"
+                name="firstname"
+                value={formData.firstname}
+                onChange={handleChange}
+                placeholder=""
+                required
               />
-            <span>Lastname</span>
+              <span>Firstname</span>
+            </label>
+
+            <label>
+              <input
+                className="input"
+                type="text"
+                name="lastname"
+                value={formData.lastname}
+                onChange={handleChange}
+                placeholder=""
+                required
+              />
+              <span>Lastname</span>
+            </label>
+          </div>
+
+          <label>
+            <input
+              className="input"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder=""
+              required
+            />
+            <span>Email</span>
           </label>
-        </div>
 
-        <label>
-          <input
-            className="input"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder=""
-            required
+          <label>
+            <input
+              className="input"
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              placeholder=""
+              required
             />
-          <span>Email</span>
-        </label>
+            <span>Password</span>
+          </label>
+          <label>
+            <input
+              className="input"
+              type="password"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              placeholder=""
+              required
+            />
+            <span>Confirm password</span>
+          </label>
 
-        <label>
-          <input
-            className="input"
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            placeholder=""
-            required
-            />
-          <span>Password</span>
-        </label>
-        <label>
-          <input
-            className="input"
-            type="password"
-            name="confirmPassword"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            placeholder=""
-            required
-            />
-          <span>Confirm password</span>
-        </label>
-        <button className="submit">Submit</button>
-        <p className="signin">
-          Already have an acount ? <Link to="/login">Sign in</Link>
-        </p>
-      </form>
-            </div>
+          <button className="submit">Submit</button>
+          <p className="signin">
+            Already have an account? <Link to="/login">Sign in</Link>
+          </p>
+        </form>
+      </div>
     </StyledWrapper>
   );
 };
@@ -251,4 +259,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default Form;
+export default Signup;
