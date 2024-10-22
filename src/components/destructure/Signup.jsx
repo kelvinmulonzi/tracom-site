@@ -35,7 +35,8 @@ const Signup = () => {
 
   return (
     <StyledWrapper>
-      <div className="wraper">
+      
+      <div className= "wraper bg black" >
         <form className="form" onSubmit={handleSubmit}>
           <p className="title">Register</p>
           <p className="message">Signup now and get full access to our app.</p>

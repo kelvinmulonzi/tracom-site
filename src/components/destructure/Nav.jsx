@@ -1,7 +1,5 @@
-
 import tracom from '../../Assets/tracom_services_cover.jpg';
 import { Link } from 'react-router-dom';
-
 
 const Nav = () => {
   return (
@@ -15,9 +13,9 @@ const Nav = () => {
           <li><Link to="/team">Team</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <div className="search">
-          <Link to="/signup" className="btn">Sign Up</Link>
-          <Link to="/login" className="btn2">Login</Link>
-        </div>
+            <Link to="/signup" className="btn">Sign Up</Link>
+            <Link to="/form" className="btn2">Login</Link>
+          </div>
         </ul>
       </nav>
     </header>

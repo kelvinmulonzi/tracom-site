@@ -4,12 +4,12 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
+      <div className="footer-container">
         <div className="footer-section about">
           <h2>About Us</h2>
           <p>
-            Tracom Academy is dedicated to providing quality education and
-            opportunities for growth in the tech industry.
+            Tracom Academy is committed to fostering growth in the tech industry
+            through education, innovation, and hands-on experience.
           </p>
         </div>
         <div className="footer-section links">
@@ -40,6 +40,14 @@ const Footer = () => {
               <FaLinkedin />
             </a>
           </div>
+        </div>
+        <div className="footer-section newsletter">
+          <h2>Newsletter</h2>
+          <p>Sign up for the latest updates and tech news:</p>
+          <form>
+            <input type="email" placeholder="Your Email" className="email-input" />
+            <button type="submit" className="subscribe-button">Subscribe</button>
+          </form>
         </div>
       </div>
       <div className="footer-bottom">
